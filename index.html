@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+    </head>
+<body>
+    <h1>Registro de Usuario</h1>
+    <form action="http://127.0.0.1:8000/registro" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="direccion">Direccion:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <label for="fotografia">Fotografia:</label>
+        <input type="file" id="fotografia" name="fotografia" accept="image/*" required><br><br>
+
+        <label for="vip">Usuario VIP:</label>
+        <input type="checkbox" id="vip" name="vip"><br><br>
+
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
